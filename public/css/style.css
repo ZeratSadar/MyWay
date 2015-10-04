@@ -15,6 +15,7 @@ body{
 	margin-top: 45vh;
 	position: absolute;
 	z-index: 1000;
+	display: block;
 }
 #titre h1, #titre h3{
 	margin-left: 100px;
@@ -207,6 +208,9 @@ footer p{
 	}
 	footer .navbar-right{
 		display: none;
+	}
+	#titre{
+	display: none;
 	}
 }
 @media (min-width: 992px){
