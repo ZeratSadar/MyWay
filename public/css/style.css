@@ -1,5 +1,23 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html, body{
 	width: 100%;
+}
+body{
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+#titre{
+	margin-top: 45vh;
+	position: absolute;
+	z-index: 1000;
+}
+#titre h1, #titre h3{
+	margin-left: 100px;
 }
 h3{
 	margin: 0;
@@ -72,6 +90,9 @@ section .val img{
 #app-and h3{
 	color: #fff;
 }
+#app-and .app-ele{
+	margin-top: 5%;
+}
 
 #app-and .animation.animated-item-4 {
   -webkit-animation: fadeInUp 300ms linear 1200ms both;
@@ -121,12 +142,24 @@ section .val img{
 	padding: 10px 15px;
 	margin-top: 30px;
 	margin-bottom: -10px;
+	color:#fff;
 }
 footer{
 	background-color: #343434;
 	color: #fff;
 	padding: 15px 0px;
 	margin-top: 30px;
+}
+footer .rs{
+	display: block;
+}
+footer .rs li{
+	display: inline-block;
+	width:35px;
+	margin-left: 15px;
+}
+footer .rs li img{
+	width:100%;
 }
 footer p{
 	margin-top: 10px;
@@ -169,10 +202,19 @@ footer p{
 		min-width: 125px;
 		margin: auto;
 	}
+	#app-and li {
+  		width: 100px;
+	}
+	footer .navbar-right{
+		display: none;
+	}
 }
 @media (min-width: 992px){
 	#valeurs .container{
 	  padding-left: 150px;
 	  padding-right: 150px;
+	}
+	footer .navbar-right{
+		display: block;
 	}
 }
