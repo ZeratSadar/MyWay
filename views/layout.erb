@@ -6,18 +6,35 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<meta name="description" content="">
     	<meta name="author" content="">
-    	<link rel="icon" href="img/logo.png">
+    	<link rel="icon" href="img/favicon.png">
 		<title>My Way</title>
     	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
     	<link href="css/style.css" rel="stylesheet">
  	</head>
 	<body>
         <header id="banner">
+            <div class="container">
+                <img src="img/element/logo-header.png" alt="Logo">
+                <div class="navbar-right">
+                    <a>S'inscrire à la newsletter</a>
+                </div>
+            </div>
         </header>
-        <div>
+        <div id="contenu">
             <%= yield %>
-        </div>
-        <footer>
+            <footer>
+            <div class="container">
+                <div></div>
+                <div class="navbar-right">
+                    <p><a>Mention Légale</a> | <a>Plan du site</a></p>
+                </div>
+            </div>
         </footer>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
 	</body>
 </html>
